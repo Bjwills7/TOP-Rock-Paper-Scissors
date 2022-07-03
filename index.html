@@ -74,7 +74,6 @@ function game() {
     while (playerWins + computerWins < 5) {
         let playerSelection = prompt('Enter rock, paper, or scissors.').toLowerCase();
         let round = playRound(playerSelection, computerPlay);
-        console.log(round)
         if (round === 1) {
             playerWins += 1;
         } else if (round === 2) {
@@ -83,10 +82,8 @@ function game() {
     }
     if (playerWins > computerWins) {
         console.log('You win!')
-    } else if (playerWins < computerWins) {
-        console.log('You lose!')
     } else {
-        console.log('The game is a tie!')
+        console.log('You Lose!')
     }
 }
     </script>
