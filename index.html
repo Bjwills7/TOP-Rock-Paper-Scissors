@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <script>
+//         function computerPlay
+// 	generate a random number from 1 to 3
+// 	if num = 1 return 'rock'
+// 	if num = 2 return 'paper'
+// 	if num = 3 return 'scissors'
+// 	save output to computerSelection
+
+function computerPlay() {
+    let num = Math.floor(Math.random() * 3) + 1;
+    let selection
+    if (num === 1) {selection = 'rock';}
+    else if (num === 2) {selection = 'paper';}
+    else if (num === 3) {selection = 'scissors';}
+    return selection;
+}
+
+// function playRound
+// 	create a variable with a value of 0 that stores a 1 or 2 defining who won
+// 	if playerSelection = computerSelection 'It's a tie!' 
+// 	if playerSelection = 'rock' and computerSelection = 'scissors' output 'You win, rock beats scissors' win = 1
+// 	if playerSelection = 'paper' and computerSelection = 'rock' output 'You win, paper beats rock' win = 1
+// 	if playerSelection = 'scissors' and computerSelection = 'paper' output 'You win, scissors beats paper' win = 1
+// 	else `You lose, ${computerSelection} beats ${playerSelection}` win = 2
+// 	return win
+
+
+// function game
+// 	create a variable for computerSelection wins with a value of 0
+// 	create a variable for playerSelection wins with a value of 0
+// 	create a for loop that iterates 5 times for 5 game rounds
+// 		make a prompt that asks for playerSelection
+// 		call playRound()
+// 		if win = 1 add 1 to playerSelectionWins
+// 		if win = 2 add 1 to playerSelectionWins
+// 	if playerSelectionWins > computerSelectionWins console log 'You win!'
+// 	else 'You lose!'
+    </script>
+</body>
+</html>
