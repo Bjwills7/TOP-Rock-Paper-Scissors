@@ -13,30 +13,15 @@
     <h1>Rock Paper Scissors</h1>
     <h2>Enter game() into console to start a game!</h2>
     <script>
-//create array that contains strings for rock, paper, and scissors
-//create function computerPlay
-//  create variable named computerSelection that contains rpsArray with a random index
-//  return computerSelection
 
-let rpsArray = ['rock', 'paper', 'scissors'];
-
+// Returns random string from rpsArray
 function computerPlay() {
+    let rpsArray = ['rock', 'paper', 'scissors'];
     let computerSelection = rpsArray[Math.floor(Math.random() * rpsArray.length)];
     return computerSelection;
 }
 
-//create function playRound that takes playerSelection and computerSelection parameters
-// 	create a variable called win with a value of 0 that stores a 1 or 2 defining who won
-// 	if playerSelection = computerSelection 'It's a tie!' 
-// 	if playerSelection = 'rock' and computerSelection = 'scissors' 
-    // or playerSelection = 'paper' and computerSelection = 'rock'
-    // or playerSelection = 'scissors' and computerSelection = 'paper'
-    // console log `You win, ${playerSelection} beats ${computerSelection}`
-    // update value of win to 1
-// 	else console log `You lose, ${computerSelection} beats ${playerSelection}`
-    // update value of win to 2
-//return win
-
+// Returns winner of a round
 function playRound(playerSelection, func) {
     let computerSelection = func();
     let win = 0;
@@ -54,17 +39,7 @@ function playRound(playerSelection, func) {
     return win;
 }
 
-//create function game
-// 	create a variable called computerWins with a value of 0
-// 	create a variable called playerWins with a value of 0
-// 	create a while loop that iterates while playerWins + computerWins is less than 5
-// 		make a prompt that asks for playerSelection and converts it to lower case
-// 		create variable called round that stores the function playRound with the parameters playerSelection and the function computerPlay
-// 		if round = 1 add 1 to playerWins
-// 		if round = 2 add 1 to computerWins
-// 	if playerWins > computerWins console log 'You win!'
-// 	else 'You lose!'
-
+// Gets player input and plays 5 rounds. Ties do not count as a round
 function game() {
     let computerWins = 0;
     let playerWins = 0;
