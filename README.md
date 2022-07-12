@@ -1,2 +1,3 @@
 # TOP-Rock-Paper-Scissors
-First iteration of rock paper scissors for The Odin Project.
+This is an experimental version of my rock, paper, scissors project.
+Its purpose is to further my understanding of what I can do with the DOM and css.
