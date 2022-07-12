@@ -16,7 +16,7 @@ let rNum = 0;
 // where results of round and game are displayed
 let textOutput = document.querySelector('.textOutput');
 
-// calls playround when a button is pressed
+// calls playRound when a button is pressed
 rockButton.addEventListener('click', function() {rock()});
 paperButton.addEventListener('click', function() {paper()});
 scissorsButton.addEventListener('click', function() {scissors()});
